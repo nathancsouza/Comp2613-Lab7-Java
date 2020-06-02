@@ -1,0 +1,226 @@
+2020-02-27 14:48:39.934 [main] INFO  a01164474.Lab7 - 2020-02-27T22:48:39.925570700Z
+2020-02-27 14:48:39.936 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 14:48:39.936 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 14:48:39.937 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 14:48:39.939 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 14:48:39.939 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 14:48:39.940 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 14:48:40.380 [main] DEBUG a01164474.database.Dao - drop table A01164474_Customer
+2020-02-27 14:48:40.701 [main] DEBUG a01164474.database.CustomerDao - create table A01164474_Customer(customerId VARCHAR(10), firstName VARCHAR(20), lastName VARCHAR(30), streetName VARCHAR(30), city VARCHAR(30), postalCode VARCHAR(30), phoneNUMBER VARCHAR(20), email VARCHAR(30), date VARCHAR(30), primary key (customerId) )
+2020-02-27 14:48:40.701 [main] DEBUG a01164474.database.Dao - create table A01164474_Customer(customerId VARCHAR(10), firstName VARCHAR(20), lastName VARCHAR(30), streetName VARCHAR(30), city VARCHAR(30), postalCode VARCHAR(30), phoneNUMBER VARCHAR(20), email VARCHAR(30), date VARCHAR(30), primary key (customerId) )
+2020-02-27 14:48:40.723 [main] DEBUG a01164474.database.CustomerDao - insert into A01164474_Customer values('1', 'Fred', 'Fish', '5707 Sidley St', 'Burnaby', 'V5J 5E6', '(604) 433-5004', 'fredfish@imperial.net', '2008-03-22')
+2020-02-27 14:48:40.745 [main] DEBUG a01164474.database.CustomerDao - insert into A01164474_Customer values('2', 'Laurie', 'Nash', '2816 Commercial Dr', 'Vancouver', 'V5N 4C6', '(604) 876-0182', 'laurieeenash@modern.com', '2014-08-28')
+2020-02-27 14:48:40.766 [main] DEBUG a01164474.database.CustomerDao - insert into A01164474_Customer values('3', 'Conrad', 'Washington', '13479 King George Blvd', 'Surrey', 'V3T 2T8', '(604) 588-4988', 'cwash@daytona.net', '2011-07-12')
+2020-02-27 14:48:40.787 [main] DEBUG a01164474.database.CustomerDao - insert into A01164474_Customer values('4', 'Jeanette', 'Price', '21000 Westminster Hwy', 'Richmond', 'V6V 2S9', '(604) 276-2552', 'priceizrite@pacific.com', '2015-10-03')
+2020-02-27 14:48:40.807 [main] DEBUG a01164474.database.CustomerDao - insert into A01164474_Customer values('5', 'Mark', 'Chan', '3766 E 1st Ave', 'Burnaby', 'V5C 3V9', '(604) 293-1022', 'mchan@hc.com', '2010-04-01')
+2020-02-27 14:48:40.850 [main] DEBUG a01164474.CustomerDaoTester - 
+Loaded 5 customer IDs from the database
+2020-02-27 14:48:40.870 [main] DEBUG a01164474.CustomerDaoTester - Customer IDs: [1, 2, 3, 4, 5]
+
+2020-02-27 14:48:40.937 [main] DEBUG a01164474.database.CustomerDao - 1
+2020-02-27 14:48:40.938 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '1'
+2020-02-27 14:48:40.938 [main] DEBUG a01164474.database.CustomerDao - Customer [id=1, firstName=Fred, lastName=Fish, street=5707 Sidley St, city=Burnaby, postalCode=V5J 5E6, phone=(604) 433-5004, emailAddress=fredfish@imperial.net, joinedDate=2008-03-22]
+
+2020-02-27 14:48:40.979 [main] DEBUG a01164474.database.CustomerDao - 2
+2020-02-27 14:48:40.979 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '2'
+2020-02-27 14:48:40.979 [main] DEBUG a01164474.database.CustomerDao - Customer [id=2, firstName=Laurie, lastName=Nash, street=2816 Commercial Dr, city=Vancouver, postalCode=V5N 4C6, phone=(604) 876-0182, emailAddress=laurieeenash@modern.com, joinedDate=2014-08-28]
+
+2020-02-27 14:48:41.020 [main] DEBUG a01164474.database.CustomerDao - 3
+2020-02-27 14:48:41.020 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '3'
+2020-02-27 14:48:41.020 [main] DEBUG a01164474.database.CustomerDao - Customer [id=3, firstName=Conrad, lastName=Washington, street=13479 King George Blvd, city=Surrey, postalCode=V3T 2T8, phone=(604) 588-4988, emailAddress=cwash@daytona.net, joinedDate=2011-07-12]
+
+2020-02-27 14:48:41.061 [main] DEBUG a01164474.database.CustomerDao - 4
+2020-02-27 14:48:41.061 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '4'
+2020-02-27 14:48:41.061 [main] DEBUG a01164474.database.CustomerDao - Customer [id=4, firstName=Jeanette, lastName=Price, street=21000 Westminster Hwy, city=Richmond, postalCode=V6V 2S9, phone=(604) 276-2552, emailAddress=priceizrite@pacific.com, joinedDate=2015-10-03]
+
+2020-02-27 14:48:41.101 [main] DEBUG a01164474.database.CustomerDao - 5
+2020-02-27 14:48:41.101 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '5'
+2020-02-27 14:48:41.101 [main] DEBUG a01164474.database.CustomerDao - Customer [id=5, firstName=Mark, lastName=Chan, street=3766 E 1st Ave, city=Burnaby, postalCode=V5C 3V9, phone=(604) 293-1022, emailAddress=mchan@hc.com, joinedDate=2010-04-01]
+
+2020-02-27 14:48:41.102 [main] INFO  a01164474.Lab7 - 
+2020-02-27T22:48:41.102869300Z
+2020-02-27 14:48:41.102 [main] INFO  a01164474.Lab7 - Duration: 1177 ms
+2020-02-27 15:03:38.527 [main] INFO  a01164474.Lab7 - 2020-02-27T23:03:38.519748400Z
+2020-02-27 15:03:38.529 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:03:38.530 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:03:38.530 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:03:38.532 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:03:38.532 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:03:38.533 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:03:38.534 [main] ERROR a01164474.CustomerDaoTester - java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedDriver
+2020-02-27 15:03:56.916 [main] INFO  a01164474.Lab7 - 2020-02-27T23:03:56.908877300Z
+2020-02-27 15:03:56.918 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:03:56.919 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:03:56.919 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:03:56.921 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:03:56.921 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:03:56.922 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:03:56.924 [main] ERROR a01164474.CustomerDaoTester - java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedDriver
+2020-02-27 15:04:27.441 [main] INFO  a01164474.Lab7 - 2020-02-27T23:04:27.433937200Z
+2020-02-27 15:04:27.443 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:04:27.444 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:04:27.444 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:04:27.446 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:04:27.446 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:04:27.447 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:04:27.448 [main] ERROR a01164474.CustomerDaoTester - java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedDriver
+2020-02-27 15:04:28.664 [main] INFO  a01164474.Lab7 - 2020-02-27T23:04:28.656398200Z
+2020-02-27 15:04:28.666 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:04:28.666 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:04:28.667 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:04:28.668 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:04:28.668 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:04:28.669 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:04:28.671 [main] ERROR a01164474.CustomerDaoTester - java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedDriver
+2020-02-27 15:06:33.200 [main] INFO  a01164474.Lab7 - 2020-02-27T23:06:33.192552300Z
+2020-02-27 15:06:33.202 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:06:33.203 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:06:33.203 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:06:33.205 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:06:33.205 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:06:33.206 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:06:33.208 [main] ERROR a01164474.CustomerDaoTester - java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedDriver
+2020-02-27 15:10:30.998 [main] INFO  a01164474.Lab7 - 2020-02-27T23:10:30.990193500Z
+2020-02-27 15:10:31.000 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:10:31.000 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:10:31.001 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:10:31.003 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:10:31.003 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:10:31.004 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:10:31.005 [main] ERROR a01164474.CustomerDaoTester - java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedDriver
+2020-02-27 15:11:34.680 [main] INFO  a01164474.Lab7 - 2020-02-27T23:11:34.672712500Z
+2020-02-27 15:11:34.681 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:11:34.682 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:11:34.682 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:11:34.684 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:11:34.685 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:11:34.686 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:11:35.395 [main] DEBUG a01164474.CustomerDaoTester - 
+Loaded 5 customer IDs from the database
+2020-02-27 15:11:35.414 [main] DEBUG a01164474.CustomerDaoTester - Customer IDs: [1, 2, 3, 4, 5]
+
+2020-02-27 15:11:35.479 [main] DEBUG a01164474.database.CustomerDao - 1
+2020-02-27 15:11:35.479 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '1'
+2020-02-27 15:11:35.479 [main] DEBUG a01164474.database.CustomerDao - Customer [id=1, firstName=Fred, lastName=Fish, street=5707 Sidley St, city=Burnaby, postalCode=V5J 5E6, phone=(604) 433-5004, emailAddress=fredfish@imperial.net, joinedDate=2008-03-22]
+
+2020-02-27 15:11:35.520 [main] DEBUG a01164474.database.CustomerDao - 2
+2020-02-27 15:11:35.520 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '2'
+2020-02-27 15:11:35.521 [main] DEBUG a01164474.database.CustomerDao - Customer [id=2, firstName=Laurie, lastName=Nash, street=2816 Commercial Dr, city=Vancouver, postalCode=V5N 4C6, phone=(604) 876-0182, emailAddress=laurieeenash@modern.com, joinedDate=2014-08-28]
+
+2020-02-27 15:11:35.562 [main] DEBUG a01164474.database.CustomerDao - 3
+2020-02-27 15:11:35.562 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '3'
+2020-02-27 15:11:35.562 [main] DEBUG a01164474.database.CustomerDao - Customer [id=3, firstName=Conrad, lastName=Washington, street=13479 King George Blvd, city=Surrey, postalCode=V3T 2T8, phone=(604) 588-4988, emailAddress=cwash@daytona.net, joinedDate=2011-07-12]
+
+2020-02-27 15:11:35.603 [main] DEBUG a01164474.database.CustomerDao - 4
+2020-02-27 15:11:35.603 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '4'
+2020-02-27 15:11:35.603 [main] DEBUG a01164474.database.CustomerDao - Customer [id=4, firstName=Jeanette, lastName=Price, street=21000 Westminster Hwy, city=Richmond, postalCode=V6V 2S9, phone=(604) 276-2552, emailAddress=priceizrite@pacific.com, joinedDate=2015-10-03]
+
+2020-02-27 15:11:35.643 [main] DEBUG a01164474.database.CustomerDao - 5
+2020-02-27 15:11:35.643 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '5'
+2020-02-27 15:11:35.643 [main] DEBUG a01164474.database.CustomerDao - Customer [id=5, firstName=Mark, lastName=Chan, street=3766 E 1st Ave, city=Burnaby, postalCode=V5C 3V9, phone=(604) 293-1022, emailAddress=mchan@hc.com, joinedDate=2010-04-01]
+
+2020-02-27 15:11:35.644 [main] INFO  a01164474.Lab7 - 
+2020-02-27T23:11:35.644800800Z
+2020-02-27 15:11:35.644 [main] INFO  a01164474.Lab7 - Duration: 972 ms
+2020-02-27 15:15:14.508 [main] INFO  a01164474.Lab7 - 2020-02-27T23:15:14.500203600Z
+2020-02-27 15:15:14.510 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 15:15:14.510 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 15:15:14.511 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 15:15:14.513 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 15:15:14.513 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 15:15:14.514 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 15:15:15.178 [main] DEBUG a01164474.CustomerDaoTester - 
+Loaded 5 customer IDs from the database
+2020-02-27 15:15:15.198 [main] DEBUG a01164474.CustomerDaoTester - Customer IDs: [1, 2, 3, 4, 5]
+
+2020-02-27 15:15:15.261 [main] DEBUG a01164474.database.CustomerDao - 1
+2020-02-27 15:15:15.261 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '1'
+2020-02-27 15:15:15.262 [main] DEBUG a01164474.database.CustomerDao - Customer [id=1, firstName=Fred, lastName=Fish, street=5707 Sidley St, city=Burnaby, postalCode=V5J 5E6, phone=(604) 433-5004, emailAddress=fredfish@imperial.net, joinedDate=2008-03-22]
+
+2020-02-27 15:15:15.303 [main] DEBUG a01164474.database.CustomerDao - 2
+2020-02-27 15:15:15.303 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '2'
+2020-02-27 15:15:15.303 [main] DEBUG a01164474.database.CustomerDao - Customer [id=2, firstName=Laurie, lastName=Nash, street=2816 Commercial Dr, city=Vancouver, postalCode=V5N 4C6, phone=(604) 876-0182, emailAddress=laurieeenash@modern.com, joinedDate=2014-08-28]
+
+2020-02-27 15:15:15.344 [main] DEBUG a01164474.database.CustomerDao - 3
+2020-02-27 15:15:15.344 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '3'
+2020-02-27 15:15:15.344 [main] DEBUG a01164474.database.CustomerDao - Customer [id=3, firstName=Conrad, lastName=Washington, street=13479 King George Blvd, city=Surrey, postalCode=V3T 2T8, phone=(604) 588-4988, emailAddress=cwash@daytona.net, joinedDate=2011-07-12]
+
+2020-02-27 15:15:15.385 [main] DEBUG a01164474.database.CustomerDao - 4
+2020-02-27 15:15:15.385 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '4'
+2020-02-27 15:15:15.385 [main] DEBUG a01164474.database.CustomerDao - Customer [id=4, firstName=Jeanette, lastName=Price, street=21000 Westminster Hwy, city=Richmond, postalCode=V6V 2S9, phone=(604) 276-2552, emailAddress=priceizrite@pacific.com, joinedDate=2015-10-03]
+
+2020-02-27 15:15:15.426 [main] DEBUG a01164474.database.CustomerDao - 5
+2020-02-27 15:15:15.426 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '5'
+2020-02-27 15:15:15.426 [main] DEBUG a01164474.database.CustomerDao - Customer [id=5, firstName=Mark, lastName=Chan, street=3766 E 1st Ave, city=Burnaby, postalCode=V5C 3V9, phone=(604) 293-1022, emailAddress=mchan@hc.com, joinedDate=2010-04-01]
+
+2020-02-27 15:15:15.427 [main] INFO  a01164474.Lab7 - 
+2020-02-27T23:15:15.427653300Z
+2020-02-27 15:15:15.427 [main] INFO  a01164474.Lab7 - Duration: 927 ms
+2020-02-27 16:26:57.080 [main] INFO  a01164474.Lab7 - 2020-02-28T00:26:57.072681100Z
+2020-02-27 16:26:57.082 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 16:26:57.083 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 16:26:57.083 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 16:26:57.086 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 16:26:57.086 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 16:26:57.087 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 16:26:57.763 [main] DEBUG a01164474.CustomerDaoTester - 
+Loaded 5 customer IDs from the database
+2020-02-27 16:26:57.783 [main] DEBUG a01164474.CustomerDaoTester - Customer IDs: [1, 2, 3, 4, 5]
+
+2020-02-27 16:26:57.846 [main] DEBUG a01164474.database.CustomerDao - 1
+2020-02-27 16:26:57.846 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '1'
+2020-02-27 16:26:57.846 [main] DEBUG a01164474.database.CustomerDao - Customer [id=1, firstName=Fred, lastName=Fish, street=5707 Sidley St, city=Burnaby, postalCode=V5J 5E6, phone=(604) 433-5004, emailAddress=fredfish@imperial.net, joinedDate=2008-03-22]
+
+2020-02-27 16:26:57.887 [main] DEBUG a01164474.database.CustomerDao - 2
+2020-02-27 16:26:57.887 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '2'
+2020-02-27 16:26:57.887 [main] DEBUG a01164474.database.CustomerDao - Customer [id=2, firstName=Laurie, lastName=Nash, street=2816 Commercial Dr, city=Vancouver, postalCode=V5N 4C6, phone=(604) 876-0182, emailAddress=laurieeenash@modern.com, joinedDate=2014-08-28]
+
+2020-02-27 16:26:57.928 [main] DEBUG a01164474.database.CustomerDao - 3
+2020-02-27 16:26:57.928 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '3'
+2020-02-27 16:26:57.928 [main] DEBUG a01164474.database.CustomerDao - Customer [id=3, firstName=Conrad, lastName=Washington, street=13479 King George Blvd, city=Surrey, postalCode=V3T 2T8, phone=(604) 588-4988, emailAddress=cwash@daytona.net, joinedDate=2011-07-12]
+
+2020-02-27 16:26:57.970 [main] DEBUG a01164474.database.CustomerDao - 4
+2020-02-27 16:26:57.970 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '4'
+2020-02-27 16:26:57.970 [main] DEBUG a01164474.database.CustomerDao - Customer [id=4, firstName=Jeanette, lastName=Price, street=21000 Westminster Hwy, city=Richmond, postalCode=V6V 2S9, phone=(604) 276-2552, emailAddress=priceizrite@pacific.com, joinedDate=2015-10-03]
+
+2020-02-27 16:26:58.010 [main] DEBUG a01164474.database.CustomerDao - 5
+2020-02-27 16:26:58.011 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '5'
+2020-02-27 16:26:58.011 [main] DEBUG a01164474.database.CustomerDao - Customer [id=5, firstName=Mark, lastName=Chan, street=3766 E 1st Ave, city=Burnaby, postalCode=V5C 3V9, phone=(604) 293-1022, emailAddress=mchan@hc.com, joinedDate=2010-04-01]
+
+2020-02-27 16:26:58.011 [main] INFO  a01164474.Lab7 - 
+2020-02-28T00:26:58.011853100Z
+2020-02-27 16:26:58.011 [main] INFO  a01164474.Lab7 - Duration: 939 ms
+2020-02-27 16:40:26.834 [main] INFO  a01164474.Lab7 - 2020-02-28T00:40:26.827620800Z
+2020-02-27 16:40:26.836 [main] DEBUG a01164474.Lab7 - Lab7()
+2020-02-27 16:40:26.837 [main] DEBUG a01164474.data.CustomerData - Starting data loading...
+2020-02-27 16:40:26.838 [main] DEBUG a01164474.io.CustomerReader - Reading C:\Users\natha\Documents\JavaWorkspace\a01164474_Lab7\customers.txt
+2020-02-27 16:40:26.839 [main] DEBUG a01164474.data.CustomerData - Customer has been loaded
+2020-02-27 16:40:26.840 [main] DEBUG a01164474.Lab7 - run()
+2020-02-27 16:40:26.851 [main] DEBUG a01164474.database.Database - Loading database properties from db.properties
+2020-02-27 16:40:27.551 [main] DEBUG a01164474.CustomerDaoTester - 
+Loaded 5 customer IDs from the database
+2020-02-27 16:40:27.571 [main] DEBUG a01164474.CustomerDaoTester - Customer IDs: [1, 2, 3, 4, 5]
+
+2020-02-27 16:40:27.636 [main] DEBUG a01164474.database.CustomerDao - 1
+2020-02-27 16:40:27.636 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '1'
+2020-02-27 16:40:27.636 [main] DEBUG a01164474.database.CustomerDao - Customer [id=1, firstName=Fred, lastName=Fish, street=5707 Sidley St, city=Burnaby, postalCode=V5J 5E6, phone=(604) 433-5004, emailAddress=fredfish@imperial.net, joinedDate=2008-03-22]
+
+2020-02-27 16:40:27.676 [main] DEBUG a01164474.database.CustomerDao - 2
+2020-02-27 16:40:27.677 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '2'
+2020-02-27 16:40:27.677 [main] DEBUG a01164474.database.CustomerDao - Customer [id=2, firstName=Laurie, lastName=Nash, street=2816 Commercial Dr, city=Vancouver, postalCode=V5N 4C6, phone=(604) 876-0182, emailAddress=laurieeenash@modern.com, joinedDate=2014-08-28]
+
+2020-02-27 16:40:27.719 [main] DEBUG a01164474.database.CustomerDao - 3
+2020-02-27 16:40:27.719 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '3'
+2020-02-27 16:40:27.720 [main] DEBUG a01164474.database.CustomerDao - Customer [id=3, firstName=Conrad, lastName=Washington, street=13479 King George Blvd, city=Surrey, postalCode=V3T 2T8, phone=(604) 588-4988, emailAddress=cwash@daytona.net, joinedDate=2011-07-12]
+
+2020-02-27 16:40:27.763 [main] DEBUG a01164474.database.CustomerDao - 4
+2020-02-27 16:40:27.764 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '4'
+2020-02-27 16:40:27.764 [main] DEBUG a01164474.database.CustomerDao - Customer [id=4, firstName=Jeanette, lastName=Price, street=21000 Westminster Hwy, city=Richmond, postalCode=V6V 2S9, phone=(604) 276-2552, emailAddress=priceizrite@pacific.com, joinedDate=2015-10-03]
+
+2020-02-27 16:40:27.805 [main] DEBUG a01164474.database.CustomerDao - 5
+2020-02-27 16:40:27.805 [main] DEBUG a01164474.database.CustomerDao - SELECT * FROM A01164474_Customer WHERE customerId = '5'
+2020-02-27 16:40:27.806 [main] DEBUG a01164474.database.CustomerDao - Customer [id=5, firstName=Mark, lastName=Chan, street=3766 E 1st Ave, city=Burnaby, postalCode=V5C 3V9, phone=(604) 293-1022, emailAddress=mchan@hc.com, joinedDate=2010-04-01]
+
+2020-02-27 16:40:27.806 [main] INFO  a01164474.Lab7 - 
+2020-02-28T00:40:27.806902800Z
+2020-02-27 16:40:27.806 [main] INFO  a01164474.Lab7 - Duration: 979 ms
